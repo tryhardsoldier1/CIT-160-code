@@ -4,7 +4,7 @@ public class BmiCalc {
     public static void main (String[] args){
         final double KILOGRAMS_PER_POUND = 0.454;
         final double METERS_PER_FOOT = 0.3046;
-
+        //METERS_PER_FOOT = 2.5; //cannot do!!!
         double weightInPounds = 75.5;
         double heightInFeet = 4.5;
 
@@ -12,6 +12,7 @@ public class BmiCalc {
         double metricHeight = heightInFeet * METERS_PER_FOOT;
         double bmi = metricWeight / (metricHeight * metricHeight);
 
-        System.out.println("BMI: " + bmi);
+        System.out.println("BMI: "  + bmi);
+
     }
 }
