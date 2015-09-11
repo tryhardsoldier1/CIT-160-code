@@ -15,9 +15,10 @@ public class VolumeCalc{
     Scanner keyboard = new Scanner(System.in);
 
     // Prompt for your name on the line below
-    
-    // Retrieve and store the name on the line below
+    System.out.print("Please enter your name ");
 
+    // Retrieve and store the name on the line below
+    name = keyboard.next();
 
     System.out.print("Enter the diamater of a sphere:");
     sphereDiam = keyboard.nextDouble();
@@ -27,6 +28,6 @@ public class VolumeCalc{
     sphereVolume = ( 4.0 / 3.0 ) * 3.14 * Math.pow( sphereRadius, 3 );
 
     // add the name to the existing line of code below (ex: Bob, the volume is...)
-    System.out.println("The volume is: " + sphereVolume);
+    System.out.println(name + ", the volume is: " + sphereVolume);
   }
 }

@@ -17,5 +17,12 @@ public class Ice03 {
 
     int indexOfNextO = obj2.indexOf("o",indexOObj2+1);
     System.out.println("The 2nd o in Hello World occurs at: " + indexOfNextO);
+
+    System.out.println("Uppercase obj1: ");
+    System.out.println("Uppercase obj2: ");
+    System.out.println("Lowercase obj1: ");
+    System.out.println("Lowercase obj2: ");
+
+    String world;    
   }
 }
