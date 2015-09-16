@@ -20,10 +20,12 @@ public class VolumeCalcGUI{
 
     // sphere volume is 3/4 * PI * the radius cubed
     // HOW DO WE ADD CONSTANT BELOW???
-    sphereVolume = ( 4.0 / 3.0 ) * 3.14 * Math.pow( sphereRadius, 3 );
+    // final double PI = 3.14;
+    sphereVolume = ( 4.0 / 3.0 ) * Math.PI * Math.pow( sphereRadius, 3 );
 
     JOptionPane.showMessageDialog(null, name + ", the volume is: " + sphereVolume);
 
     // WHAT IS MISSING AT THE END?????
+    System.exit(0);
   }
 }

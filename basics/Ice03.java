@@ -18,11 +18,14 @@ public class Ice03 {
     int indexOfNextO = obj2.indexOf("o",indexOObj2+1);
     System.out.println("The 2nd o in Hello World occurs at: " + indexOfNextO);
 
-    System.out.println("Uppercase obj1: ");
-    System.out.println("Uppercase obj2: ");
-    System.out.println("Lowercase obj1: ");
-    System.out.println("Lowercase obj2: ");
+    String upper = obj1.toUpperCase();
+    System.out.println("Uppercase obj1: " + upper);
+    System.out.println("Uppercase obj2: " + obj2.toUpperCase());
+    System.out.println("Lowercase obj1: " + obj1.toLowerCase());
+    System.out.println("Lowercase obj2: " + obj2.toLowerCase());
 
-    String world;    
+    String world = obj2.substring(6); //holds world
+    System.out.println("new string is " + obj1 + world);
+    String newWorld = obj1 + world;
   }
 }

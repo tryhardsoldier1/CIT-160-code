@@ -18,7 +18,7 @@ public class VolumeCalc{
     System.out.print("Please enter your name ");
 
     // Retrieve and store the name on the line below
-    name = keyboard.next();
+    name = keyboard.nextLine();
 
     System.out.print("Enter the diamater of a sphere:");
     sphereDiam = keyboard.nextDouble();
