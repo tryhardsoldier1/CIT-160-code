@@ -10,6 +10,7 @@ public class Clock
 		hours = 0;
 		minutes = 0;
 		seconds = 0;
+		System.out.println("All zeros set!");
 	}//end of constructor
 
 	public void printTime()
@@ -26,7 +27,22 @@ public class Clock
 	{
 		hours = hrs;
 		minutes = mins;
-		secs = seconds;
+		seconds = secs;
+	}
+
+	// mutator aka setter
+	public void setHours(int hrs){
+		hours = hrs;
+	}
+
+	// mutator aka setter
+	public void setMinutes(int mins){
+		minutes = mins;
+	}
+
+	// mutator aka setter
+	public void setSeconds(int secs){
+		seconds = secs;
 	}
 
 }//end of class
