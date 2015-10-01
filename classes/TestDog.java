@@ -3,15 +3,15 @@
 class Dog{
 
     private String name;
-    
+
     public Dog(){
         name = "";
     }
-    
+
     public Dog(String s){
         name = s;
     }
-    
+
     public void setName(String s){
         name = s;
     }
@@ -25,18 +25,20 @@ public class TestDog{
 
     public static void main(String[] args){
         // creating the "Max" dog
-        Dog aDog = new Dog("Max"); 
+        Dog aDog = new Dog("Max");
         System.out.println(aDog.getName());
+        String name = "bob";
+        foo(name);
+        System.out.println(name);
+        //System.out.println(s);
+        foo2(aDog);
     }
-    
-    public static String foo(String s){
+
+    public static void foo(String s){
         s = "Buster";
     }
-	
-	public static void foo2(Dog d) { 
-    // change name to "Fuffy"
-      d.setName("Fluffy");
+
+	  public static void foo2(Dog d) { // change name to "Fuffy"
+        d.setName("Fluffy");
     }
 }
-
-

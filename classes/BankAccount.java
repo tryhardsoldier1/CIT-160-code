@@ -6,7 +6,7 @@ public class BankAccount {
 
 	// Declare global private variables
 	private double balance;
-	public double interestRate;
+	private double interestRate;
 	private double interest;
 
 	// Constructors
@@ -16,36 +16,42 @@ public class BankAccount {
 		interestRate = 0;
 		interest = 0;
 	}
-	
-	// Setter / Mutators
-	public void setInterestRate(double interestRate)){
-		interestRate = interestRate;
+
+	public BankAccount(double  bal, double iRate, double in){
+		balance = bal;
+		interestRate = iRate;
+		interest = in;
 	}
-	
+
+	// Setter / Mutators
+	public void setInterestRate(double iRate){
+		interestRate = iRate;
+	}
+
 	public void deposit(double amount){
 		// balance = balance + amount;
 		balance = balance + amount;
 	}
-	
+
 	public void withdraw(double amount){
-		// balance = balance - amount;
-		balance = balance - amount;		
+		// balance = balance - amount; 
+		balance = balance - amount;
 	}
-	
+
 	public void addInterest(){
 		interest = balance * interestRate;
 		balance = balance + interest;
 	}
-	
+
 	// Getters / Accessors
-	public int getBalance(){
+	public double getBalance(){
 		return balance;
 	}
-	
+
 	public double getInterestRate(){
 		return interestRate;
 	}
-	
+
 	public double getInterest(){
 		return interest;
 	}
