@@ -16,15 +16,15 @@ public class Triangle
 
       // Get a side1.
       System.out.print("Enter first side: ");
-      side1 = keyboard.nextLine();
+      side1 = keyboard.nextInt();
       
       // Get a side2
       System.out.print("Enter second side: ");
-      side2 = keyboard.nextLine();
+      side2 = keyboard.nextInt();
 
       // Get a side3
       System.out.print("Enter third side: ");
-      side3 = keyboard.nextLine();
+      side3 = keyboard.nextInt();
 
       //test to see if it is a valid triangle
 	  //if it is valid, what kind of triangle is it?
