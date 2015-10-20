@@ -18,7 +18,7 @@ public class SecretWord
       input = keyboard.nextLine();
 
       // Determine if the user entered the secret word.
-      if (input.equalsIgnoreCase("PROSPERO"))
+      if (input.equals("PROSPERO"))
       {
          System.out.println("Congratulations! You know the "
                             + "secret word!");
@@ -28,5 +28,6 @@ public class SecretWord
          System.out.println("Sorry, that is NOT the "
                             + "secret word!");
       }
+      System.out.println(input.hashCode());
    }
 }
