@@ -20,11 +20,17 @@ public class Caeser {
 		System.out.print("Enter shift number: ");
 		shift = keyboard.nextInt();
 		
-		// what goes here???
-		
+		// encrypt the character by applying the shift
+		if (message + shift > 122)
+			encryptedMessage = (char)(message + shift - 26); //loop back to the beginning
+		else if(message + shift < 97)
+			encryptedMessage = (char)(message + shift + 26); //loop back to the end
+		else
+			encryptedMessage = (char)(message + shift); //no looping needed
 		
 		System.out.println("Your encrypted message is: " + encryptedMessage);
 		keyboard.close();
+		
 	}
 
 }
